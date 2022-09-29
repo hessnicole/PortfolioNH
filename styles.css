@@ -1,24 +1,46 @@
 body {
 
 background-color: black;
+font-family: 'Nunito Sans', sans-serif;
+color: rgb(247, 222, 183);
+}
+
+#header {
+    height: 800px;
 }
 
 #oben {
         height: 500px;
         background-image: url("AdobeStock_dreieck-gold-3.png");
         background-size: contain;
+        position: relative;
+
 }
+
+
 
 #abstand {
     height: 200px;
 
 }
 
-#Foto {
-    -webkit-mask-image: url("portrait-maske-02.png");
-    mask-image: url("portrait-maske-02.png");
-    -webkit-mask-size: 70%;
-    mask-size: 70%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;    
-  }
+#parent
+{
+  position: relative;
+}
+
+#quadrat {
+    position: absolute;
+    margin-top: 300px;
+}
+
+
+#portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#AM {
+    text-align: center;
+}
