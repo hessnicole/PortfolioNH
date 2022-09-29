@@ -1,0 +1,24 @@
+body {
+
+background-color: black;
+}
+
+#oben {
+        height: 500px;
+        background-image: url("AdobeStock_dreieck-gold-3.png");
+        background-size: contain;
+}
+
+#abstand {
+    height: 200px;
+
+}
+
+#Foto {
+    -webkit-mask-image: url("portrait-maske-02.png");
+    mask-image: url("portrait-maske-02.png");
+    -webkit-mask-size: 70%;
+    mask-size: 70%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;    
+  }
