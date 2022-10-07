@@ -5,15 +5,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="head.css">
+<link rel="stylesheet" href="aboutme.css">
+<link rel="stylesheet" href="CV.css">
+<link rel="stylesheet" href="kontakt.css">
 </head>
+
 <body>
 
+<!-- Muster und Passfoto-->
 <div id="header">
     <div id="oben"> <!-- Muster zuoberst-->
         <div id="quadrat"> <!-- Portrait Bild-->
             <img id="portrait" src="Bilder\foto-02.png" alt="Portrait" width="30%">
         </div>
 </div>
+
+<!-- Name-->
 <!-- source: https://codepen.io/alvarotrigo/pen/xxLvyOG -->
 <div id="title">
     <div class="waviy">
@@ -30,9 +38,8 @@
      
        </div>
 </div>
-
-
 </div>
+
 
 
 
@@ -55,6 +62,73 @@
 
 <div id="aufz">Englisch</div>
 
+<!--CV-->
+
+<section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <div class="timeline">
+        <div class="timeline-entry right">
+            <div class="tl-title">Software Engineer</div>
+            <div class="location-dates">
+                <div class="tl-location">Berner Fachhochschule</div>
+                <div class="spacer"></div>
+                <div class="tl-dates">2022 - Heute</div>
+            </div>
+            <div class="tl-description">
+                <span>Webentwicklung</span>
+                <ul>
+                    <li>OSS Directory</li>
+                    <li>Support bei Vorlesungen</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-entry left">
+            <div class="tl-title">Software Engineer</div>
+            <div class="location-dates">
+                <div class="tl-location">Universität Bern</div>
+                <div class="spacer"></div>
+                <div class="tl-dates">2019 - 2022</div>
+            </div>
+            <div class="tl-description">
+                <span>Webentwicklung</span>
+                <ul>
+                    <li>Resource Impact Dashboard</li>
+                    <li>Nachhaltiges Immobilienmanagement</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-entry right">
+            <div class="tl-title">Junior Software Engineer</div>
+            <div class="location-dates">
+                <div class="tl-location">Bedag Informatik AG</div>
+                <div class="spacer"></div>
+                <div class="tl-dates">2017 - 2019</div>
+            </div>
+            <div class="tl-description">
+                <span>Arbeit and Firmeninternen Projekten</span>
+                <ul>
+                    <li>Grundbuchverwaltungsapplikation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-entry left">
+            <div class="tl-title">Lehre Software Engineer</div>
+            <div class="location-dates">
+                <div class="tl-location">Bedag Informatik AG</div>
+                <div class="spacer"></div>
+                <div class="tl-dates">2015 - 2017</div>
+            </div>
+            <div class="tl-description">
+                <span>Grundausbildung:</span>
+                <ul>
+                    <li>HTML/CSS Tetris</li>
+                    <li>Datenbank-Anonymisierer</li>
+                    <li>Einführung Webentwicklung</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>

@@ -1,0 +1,28 @@
+
+
+#AM {
+    text-align: center;
+  }
+  
+  #dreieck {
+      float: left;
+      width: 50px;
+     /*  border: solid white; */
+      margin-right: 10px;
+      margin-left: 25%;
+  }
+  
+  #aufz {
+      font-size: large;
+      float: left;
+      /* border: solid white; */
+      height: 50px;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  #abstand {
+      height: 75px;
+  }
