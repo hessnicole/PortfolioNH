@@ -4,7 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <!-- Animate.css Copyright 2021 Daniel Eden (“Licensor”) -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="aboutme.css">
 <link rel="stylesheet" href="CV.css">
@@ -12,7 +17,9 @@
 </head>
 
 <body>
+<div id="menu">
 
+</div>
 <!-- Muster und Passfoto-->
 <div id="header">
     <div id="oben"> <!-- Muster zuoberst-->
@@ -43,92 +50,155 @@
 
 
 
+
+<!-- Über mich -->
+
+
 <div id="AM"> 
-<h1>About Me</h1>
+<h1>Fähigkeiten</h1>
+</div>
+
+<div id="abschnitt2">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="icon" src="Bilder\html-front.png" alt="">
+            </div>
+            <div class="flip-card-back">
+                <img class="icon" src="Bilder\html-back.png" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="icon" src="Bilder\css-front.png" alt="">
+            </div>
+            <div class="flip-card-back">
+                <img class="icon" src="Bilder\css-back.png" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="icon" src="Bilder\js-front.png" alt="">
+            </div>
+            <div class="flip-card-back">
+                <img class="icon" src="Bilder\js-back.png" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img class="icon" src="Bilder\cc-front.png" alt="">
+            </div>
+            <div class="flip-card-back">
+                <img class="icon" src="Bilder\cc-back.png" alt="" >
+            </div>
+            </div>
+        </div>
+
 </div>
 
 
-<div id="dreieck">
-    <img src="Bilder\dreieck.png" alt="dreieck" width="50px">
-</div>
 
-<div id="aufz">Deutsch</div>
 
-<div id="abstand"></div>
 
-<div id="dreieck">
-    <img src="Bilder\dreieck.png" alt="dreieck" width="50px">
-</div>
+<!-- Unterteiler -->
+<div class="parallax"></div>
 
-<div id="aufz">Englisch</div>
 
-<!--CV-->
+
+
+
+
+
+
+
+
+
+<!--CV - Quelle: Patrick Brunner*/-->
 
 <section id="cv">
-    <h2>Curriculum Vitae</h2>
+    <h1>Curriculum Vitae</h1>
     <div class="timeline">
-        <div class="timeline-entry right">
-            <div class="tl-title">Software Engineer</div>
+        <!-- animate__animated animate__fadeInRightBig -->
+        <div class="timeline-entry right animate__animated animate__fadeInRightBig" style="border:solid; ">  
+            <div class="tl-title">BSc Wirtschaftsinformatik</div>
             <div class="location-dates">
                 <div class="tl-location">Berner Fachhochschule</div>
                 <div class="spacer"></div>
-                <div class="tl-dates">2022 - Heute</div>
+                <div class="tl-dates">2020 - heute</div>
             </div>
             <div class="tl-description">
-                <span>Webentwicklung</span>
-                <ul>
-                    <li>OSS Directory</li>
-                    <li>Support bei Vorlesungen</li>
-                </ul>
+                <span>Vollzeitstudium</span>
             </div>
         </div>
         <div class="timeline-entry left">
-            <div class="tl-title">Software Engineer</div>
+            <div class="tl-title">Kauffrau</div>
             <div class="location-dates">
-                <div class="tl-location">Universität Bern</div>
+                <div class="tl-location">Büro Pontri GmbH</div>
                 <div class="spacer"></div>
-                <div class="tl-dates">2019 - 2022</div>
+                <div class="tl-dates">2020 - heute</div>
             </div>
             <div class="tl-description">
-                <span>Webentwicklung</span>
+                <span>Arbeiten</span>
                 <ul>
-                    <li>Resource Impact Dashboard</li>
-                    <li>Nachhaltiges Immobilienmanagement</li>
+                    <li>Mitarbeiterwesen</li>
+                    <li>Marketing und Kommunikation</li>
                 </ul>
             </div>
         </div>
         <div class="timeline-entry right">
-            <div class="tl-title">Junior Software Engineer</div>
+            <div class="tl-title">Berufsmaturität</div>
             <div class="location-dates">
-                <div class="tl-location">Bedag Informatik AG</div>
+                <div class="tl-location">GIBB Bern</div>
                 <div class="spacer"></div>
-                <div class="tl-dates">2017 - 2019</div>
+                <div class="tl-dates">2019 - 2020</div>
             </div>
             <div class="tl-description">
-                <span>Arbeit and Firmeninternen Projekten</span>
-                <ul>
-                    <li>Grundbuchverwaltungsapplikation</li>
-                </ul>
+                <span>Technik, Architektur & Life Science</span>
             </div>
         </div>
         <div class="timeline-entry left">
-            <div class="tl-title">Lehre Software Engineer</div>
+            <div class="tl-title">Drucktechnologin</div>
             <div class="location-dates">
-                <div class="tl-location">Bedag Informatik AG</div>
+                <div class="tl-location">Varicolor AG</div>
                 <div class="spacer"></div>
-                <div class="tl-dates">2015 - 2017</div>
+                <div class="tl-dates">2018 - 2019</div>
             </div>
             <div class="tl-description">
-                <span>Grundausbildung:</span>
+                <span>Arbeiten</span>
                 <ul>
-                    <li>HTML/CSS Tetris</li>
-                    <li>Datenbank-Anonymisierer</li>
-                    <li>Einführung Webentwicklung</li>
+                    <li>Ausrüsterei</li>
+                    <li>Digitaldruck</li>
                 </ul>
             </div>
         </div>
+        <div class="timeline-entry right">
+            <div class="tl-title">Lehre Drucktechnologin - Reprografin</div>
+            <div class="location-dates">
+                <div class="tl-location">Logistikbasis der Armee</div>
+                <div class="spacer"></div>
+                <div class="tl-dates">2014 - 2018</div>
+            </div>
+            <div class="tl-description">
+                <span>Grundausbildung</span>
+                <ul>
+                    <li>Digitaldruck</li>
+                    <li>Werbetechnik</li>
+                    <li>Adobe CC</li>
+                </ul>
+            </div>
     </div>
-</section>
 
+
+    
+</section>
+ <div id="abschnitt3">
+
+</div>
 </body>
 </html>

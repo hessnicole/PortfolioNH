@@ -1,9 +1,16 @@
+
+#menu {
+  height: 10vh;
+  display: flex;
+  /* border: solid white; */
+}
+
 #header {
     height: 800px;
 }
 
 #oben {
-        height: 500px;
+        height: 400px;
         background-image: url("AdobeStock_dreieck-gold-3.png");
         background-size: contain;
         position: relative;

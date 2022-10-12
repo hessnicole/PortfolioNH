@@ -3,26 +3,65 @@
 #AM {
     text-align: center;
   }
-  
-  #dreieck {
-      float: left;
-      width: 50px;
-     /*  border: solid white; */
-      margin-right: 10px;
-      margin-left: 25%;
+
+  #abschnitt2 {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid white; */
+    height: 90vh;
+  }
+
+  .item {
+    width: 10vw;
+    height: 10vw;
+    border: solid;
+  }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 12vw;
+    height: 12vw;
   }
   
-  #aufz {
-      font-size: large;
-      float: left;
-      /* border: solid white; */
-      height: 50px;
-      width: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
+.icon {
+    width: 12vw;
+}
+
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
   }
-  #abstand {
-      height: 75px;
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  /* .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  } */
+  
+  /* Style the back side */
+  .flip-card-back {
+    /* background-color: dodgerblue;
+    color: white; */
+    transform: rotateY(180deg);
   }

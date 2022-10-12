@@ -1,8 +1,35 @@
+:root {
+    --color-main: #f7deb7;
+    --color-darker: #302A3A;
+    --color-background-left: #000000;
+    --color-background-middle:	#bababa;
+    --color-background-right: #332D3D;
+    --color-background-gradient: linear-gradient(90deg, var(--color-background-left) 0%, var(--color-background-middle) 50%, var(--color-background-right) 100%);
+    
+}
+
+
+
 body {
 
 background-color: black;
 font-family: 'Nunito Sans', sans-serif;
 color: rgb(247, 222, 183);
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("AdobeStock_dreieck-lang-01.png");
+  
+    /* Set a specific height */
+    min-height: 15vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
 
 
