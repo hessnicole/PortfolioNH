@@ -73,18 +73,6 @@ section {
 
 }
 
-/* content: '';
-position: absolute;
-left: -2em;
-top: 50%;
-width: 10px;
-height: 10px;
-background: var(--color-main);
-border: 5px solid var(--color-background-left);
-border-radius: 10em;
-width: 0px; */
-
-
 
 .tl-title {
     font-size: 17px;
@@ -163,16 +151,16 @@ width: 0px; */
     }
 
     .timeline-entry::after {
-        border: 5px solid var(--color-background-middle);
+        border: 8px solid var(--color-main);
     }
 
     .timeline-entry.right::after {
         left: unset;
-        right: calc(100% + 2em - 6px);
+        right: calc(100% + 2em - 8.5px);
     }
 
     .timeline-entry.left::after {
-        left: calc(100% + 2em - 6px);
-        background: var(--color-main);
+        left: calc(100% + 2em - 7.5px);
+  
     }
 }

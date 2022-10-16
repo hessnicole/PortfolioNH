@@ -10,16 +10,30 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="aboutme.css">
 <link rel="stylesheet" href="CV.css">
 <link rel="stylesheet" href="kontakt.css">
+<link rel="stylesheet" href="impressionen.scss">
 </head>
 
 <body>
-<div id="menu">
 
-</div>
+ <!--Navigation Menu-->
+
+ <nav>
+    <a href="#FirstPage" data-replace="Home"><span>Home</span></a>
+    <a href="#aboutme" data-replace="aboutme"><span>Über mich</span></a>
+    <a href="#cv" data-replace="CV"><span>CV</span></a>
+    <a href="#impressionen" data-replace="impressionen"><span>impressionen</span></a>
+    <a href="#" data-replace="Contact"><span>Kontakt</span></a>
+    <button class="btn-toggle">
+      <i onclick="ToggleIcon(this)" class="uil uil-sun"></i>
+    </button>
+  </nav>    
+
+    
 <!-- Muster und Passfoto-->
 <div id="header">
     <div id="oben"> <!-- Muster zuoberst-->
@@ -53,12 +67,13 @@
 
 <!-- Über mich -->
 
-
-<div id="AM"> 
+<!-- Fähigkeiten -->
+<section class="aboutme" id="aboutme">
+<div > 
 <h1>Fähigkeiten</h1>
 </div>
 
-<div id="abschnitt2">
+<div class="abschnitt2">
         <div class="flip-card">
             <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -102,8 +117,56 @@
 
 </div>
 
+<!-- Freizeit -->
 
-
+<div class="aboutme"> 
+    <h1>Freizeit</h1>
+    </div>
+    
+    <div class="abschnitt2">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="icon" src="Bilder\html-front.png" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <img class="icon" src="Bilder\html-back.png" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="icon" src="Bilder\css-front.png" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <img class="icon" src="Bilder\css-back.png" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="icon" src="Bilder\js-front.png" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <img class="icon" src="Bilder\js-back.png" alt="">
+                </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class="icon" src="Bilder\cc-front.png" alt="">
+                </div>
+                <div class="flip-card-back">
+                    <img class="icon" src="Bilder\cc-back.png" alt="" >
+                </div>
+                </div>
+            </div>
+    
+    </div>
+</section>
 
 
 <!-- Unterteiler -->
@@ -125,7 +188,8 @@
     <h1>Curriculum Vitae</h1>
     <div class="timeline">
         <!-- animate__animated animate__fadeInRightBig -->
-        <div class="timeline-entry right animate__animated animate__fadeInRightBig" style="border:solid; ">  
+        
+        <div data-aos="fade-left" class="timeline-entry right">  
             <div class="tl-title">BSc Wirtschaftsinformatik</div>
             <div class="location-dates">
                 <div class="tl-location">Berner Fachhochschule</div>
@@ -135,8 +199,9 @@
             <div class="tl-description">
                 <span>Vollzeitstudium</span>
             </div>
+        
         </div>
-        <div class="timeline-entry left">
+        <div data-aos="fade-right" class="timeline-entry left">
             <div class="tl-title">Kauffrau</div>
             <div class="location-dates">
                 <div class="tl-location">Büro Pontri GmbH</div>
@@ -151,7 +216,7 @@
                 </ul>
             </div>
         </div>
-        <div class="timeline-entry right">
+        <div data-aos="fade-left" class="timeline-entry right">
             <div class="tl-title">Berufsmaturität</div>
             <div class="location-dates">
                 <div class="tl-location">GIBB Bern</div>
@@ -162,7 +227,7 @@
                 <span>Technik, Architektur & Life Science</span>
             </div>
         </div>
-        <div class="timeline-entry left">
+        <div data-aos="fade-right" class="timeline-entry left">
             <div class="tl-title">Drucktechnologin</div>
             <div class="location-dates">
                 <div class="tl-location">Varicolor AG</div>
@@ -177,7 +242,7 @@
                 </ul>
             </div>
         </div>
-        <div class="timeline-entry right">
+        <div data-aos="fade-left" class="timeline-entry right">
             <div class="tl-title">Lehre Drucktechnologin - Reprografin</div>
             <div class="location-dates">
                 <div class="tl-location">Logistikbasis der Armee</div>
@@ -197,8 +262,34 @@
 
     
 </section>
- <div id="abschnitt3">
+
+<section id="impressionen">
+ <div>
+
+    <div class="wrapper">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?water" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?summer" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?plants" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?snow" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?roses" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?sky" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?nature" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?blossom" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?ice" alt="">
+        <img class="foto" src="https://source.unsplash.com/random/600x600?spring" alt="">
+      </div>
+
+
+
 
 </div>
+
+</section>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

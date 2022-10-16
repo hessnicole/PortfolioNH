@@ -1,14 +1,14 @@
 
 
-#AM {
+.aboutme {
     text-align: center;
   }
 
-  #abschnitt2 {
+  .abschnitt2 {
     display: flex;
     justify-content: space-around;
     /* border: solid white; */
-    height: 90vh;
+    height: 30vh;
   }
 
   .item {
