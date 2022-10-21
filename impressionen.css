@@ -1,4 +1,4 @@
-.impressionen {
+/* .impressionen {
 	height: 100%;
 	font-size: 16px;
 	line-height: 1.5;
@@ -10,7 +10,7 @@
 	background-color: #222;
 	display: flex;
 	align-items: center;
-}
+} */
 
 .container {
 	position: relative;
@@ -26,7 +26,7 @@
 	align-items: center;
 }
 
-img {
+.container img {
 	z-index: 1;
 	grid-column: span 2;
 	max-width: 100%;
@@ -36,22 +36,23 @@ img {
 	transition: all .25s;
 }
 
-img:nth-child(7n + 1) {
+.container img:nth-child(7n + 1) {
 	grid-column: 2 / span 2;
 }
 
 
-div img {
+.container img {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
   }
-  div img {
+
+ .container img {
     filter: sepia(100%);
     -webkit-filter: sepia(100%);
     -moz-filter: sepia(100%);
   }
-  div img:hover {
+ .container img:hover {
     z-index: 2;
     filter: sepia(0%);
     -webkit-filter: sepia(0%);
