@@ -1,0 +1,21 @@
+.Kontaktformular {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin-bottom: 50vh;
+}
+
+.Felder {
+    flex-direction: row;
+}
+
+
+.Formularfeld {
+    width: fit-content;
+}
+
+.Bezeichnung {
+    font-size: larger;
+    text-align: center;
+}

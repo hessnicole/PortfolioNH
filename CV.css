@@ -120,7 +120,7 @@ section {
     .timeline {
         width: 36em;
         flex: 1 1 auto;
-        max-height: 90vh;
+        height: 150vh;
         gap: 0;
         justify-content: space-around;
         background: linear-gradient( rgb(247, 222, 183),  rgb(247, 222, 183)) no-repeat center / 4px 100%;

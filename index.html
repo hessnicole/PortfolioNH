@@ -16,6 +16,10 @@
 <link rel="stylesheet" href="CV.css">
 <link rel="stylesheet" href="kontakt.css">
 <link rel="stylesheet" href="impressionen.css">
+
+
+
+
 </head>
 
 <body>
@@ -294,9 +298,67 @@
 <div class="parallax"></div>
 
 
-<section id="Kontakt" class="abschnitt">
-<h1>Kontakt</h1>
 
+<!-- Kontaktformular -->
+
+      <div class="Kontaktformular">
+        <div class="Felder">
+        <h1>Kontaktformular</h1>
+        <!-- contact form -->
+        <form id="myForm">
+          <!-- name -->
+          <div class="Formularfeld">
+        <div class="Bezeichnung">
+            <label  for="name">Name</label>
+        </div>
+            <input
+              type="name"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="enter your name"
+            />
+          </div>
+
+          <!-- email -->
+          <div class="Formularfeld">
+            <div class="Bezeichnung">
+                <label for="email">E-Mail Adresse</label>
+            </div>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="enter your email"
+            />
+          </div>
+
+          <!-- subject -->
+          <div class="Formularfeld">
+            <div class="Bezeichnung">
+                <label for="subject">Betreff</label>
+            </div>
+            <input
+              type="text"
+              name="subject"
+              class="form-control"
+              id="subject"
+              placeholder="enter email subject"
+            />
+          </div>
+
+          <div class="Formularfeld">
+            <div class="Bezeichnung">
+                <label for="message">Nachricht</label>
+            </div>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Senden</button>
+        </form>
+      </div>
+    </div>
 
 
 </section>
@@ -308,5 +370,49 @@
   <script>
     AOS.init();
   </script>
+
+
+<!-- Quelle: https://dev.to/ebereplenty/contact-form-with-emailjs-plain-javascript-365l -->
+
+<!-- Email JS -->
+<script
+type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+></script>
+
+
+
+<script type="text/javascript">
+(function () {
+  emailjs.init("w7UL6No9sVoJL7qJy");
+})();
+</script>
+<script>
+// listen to the form submission
+document
+  .getElementById("myForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const serviceID = "service_64zg1sg";
+    const templateID = "template_229sj5a";
+
+    // send the email here
+    emailjs.sendForm(serviceID, templateID, this).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("SUCCESS!");
+      },
+      (error) => {
+        console.log("FAILED...", error);
+        alert("FAILED...", error);
+      }
+    );
+  });
+</script>
+
+
+
+
 </body>
 </html>
