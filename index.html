@@ -9,8 +9,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="head.css">
 <link rel="stylesheet" href="aboutme.css">
 <link rel="stylesheet" href="CV.css">
@@ -27,11 +27,11 @@
  <!--Navigation Menu-->
 
  <nav>
-    <a href="#FirstPage" data-replace="Home"><span>Home</span></a>
+    <a href="#header" data-replace="Home"><span>Home</span></a>
     <a href="#aboutme" data-replace="aboutme"><span>Über mich</span></a>
     <a href="#cv" data-replace="CV"><span>CV</span></a>
     <a href="#impressionen" data-replace="impressionen"><span>impressionen</span></a>
-    <a href="#" data-replace="Contact"><span>Kontakt</span></a>
+    <a href="#Kontaktformular" data-replace="Kontakt"><span>Kontakt</span></a>
     <button class="btn-toggle">
       <i onclick="ToggleIcon(this)" class="uil uil-sun"></i>
     </button>
@@ -300,8 +300,9 @@
 
 
 <!-- Kontaktformular -->
+<!-- Quelle: https://dev.to/ebereplenty/contact-form-with-emailjs-plain-javascript-365l -->
 
-      <div class="Kontaktformular">
+      <div class="Kontaktformular" id="Kontaktformular">
         <div class="Felder">
         <h1>Kontaktformular</h1>
         <!-- contact form -->
@@ -316,7 +317,7 @@
               name="name"
               class="form-control"
               id="name"
-              placeholder="enter your name"
+              placeholder="Name"
             />
           </div>
 
@@ -330,7 +331,7 @@
               name="email"
               class="form-control"
               id="email"
-              placeholder="enter your email"
+              placeholder="E-mail Adresse"
             />
           </div>
 
@@ -344,7 +345,7 @@
               name="subject"
               class="form-control"
               id="subject"
-              placeholder="enter email subject"
+              placeholder="um was gehts?"
             />
           </div>
 
@@ -355,7 +356,7 @@
             <textarea class="form-control" id="message" name="message" rows="5"></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary">Senden</button>
+          <button type="submit" class="Senden">Senden</button>
         </form>
       </div>
     </div>
@@ -366,10 +367,7 @@
 
 
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+
 
 
 <!-- Quelle: https://dev.to/ebereplenty/contact-form-with-emailjs-plain-javascript-365l -->
@@ -411,7 +409,10 @@ document
   });
 </script>
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
