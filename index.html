@@ -26,16 +26,27 @@
 
  <!--Navigation Menu-->
 
- <nav>
-    <a href="#header" data-replace="Home"><span>Home</span></a>
-    <a href="#aboutme" data-replace="aboutme"><span>Über mich</span></a>
-    <a href="#cv" data-replace="CV"><span>CV</span></a>
-    <a href="#impressionen" data-replace="impressionen"><span>impressionen</span></a>
-    <a href="#Kontaktformular" data-replace="Kontakt"><span>Kontakt</span></a>
-    <button class="btn-toggle">
-      <i onclick="ToggleIcon(this)" class="uil uil-sun"></i>
-    </button>
+ <nav id="main-nav">
+    <a href="#header"><span>Home</span></a>
+    <a href="#aboutme"><span>Über mich</span></a>
+    <a href="#cv"><span>CV</span></a>
+    <a href="#impressionen"><span>Impressionen</span></a>
+    <a href="#Kontaktformular"><span>Kontakt</span></a>
   </nav>    
+
+  <nav id="mobile-nav">
+    <svg class= "burger-menu-icon" viewBox="0 0 100 80" width="40" height="40" style="fill: rgb(247, 222, 183);">
+        <rect width="100" height="20"></rect>
+        <rect y="30" width="100" height="20"></rect>
+        <rect y="60" width="100" height="20"></rect>
+      </svg>
+    <a href="#header" class="mobile-nav-option"><span>Home</span></a>
+    <a href="#aboutme" class="mobile-nav-option"><span>Über mich</span></a>
+    <a href="#cv" class="mobile-nav-option"><span>CV</span></a>
+    <a href="#impressionen" class="mobile-nav-option"><span>Impressionen</span></a>
+    <a href="#Kontaktformular" class="mobile-nav-option"><span>Kontakt</span></a>
+  </nav>    
+
 
     
 <!-- Muster und Passfoto-->
@@ -302,9 +313,10 @@
 <!-- Kontaktformular -->
 <!-- Quelle: https://dev.to/ebereplenty/contact-form-with-emailjs-plain-javascript-365l -->
 
+<section class="abschnitt"> 
+    <h1 >Kontaktformular</h1>
       <div class="Kontaktformular" id="Kontaktformular">
-        <div class="Felder">
-        <h1>Kontaktformular</h1>
+        <div>
         <!-- contact form -->
         <form id="myForm">
           <!-- name -->
@@ -413,7 +425,26 @@ document
   <script>
     AOS.init();
   </script>
+<script>
+document.getElementById('mobile-nav').addEventListener('click', expandNav)
 
+async function expandNav() {
+ let navElements = document.getElementsByClassName('mobile-nav-option')
+ let position = 0
+ let zIndex = -1
+ for (let element of navElements) {
+    element.style.bottom = `${position}rem`
+    element.style.zIndex = `${zIndex}`
+    position += 4.5
+    zIndex --
+    await new Promise(r =>setTimeout(r, 100))
+    element.style.width ? element.style.width = null
+        : element.style.width = '4rem'
+ }
+
+}
+
+</script>
 
 </body>
 </html>
