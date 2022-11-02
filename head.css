@@ -11,8 +11,8 @@
 
 #oben {
         height: 400px;
-        background-image: url("AdobeStock_dreieck-gold-3.png");
-        background-size: contain;
+        background-image: url("Parallax-dreieck.png");
+        /* background-size: contain; */
         position: relative;
 
 }
@@ -28,6 +28,7 @@
 #quadrat {
     position: absolute;
     margin-top: 300px;
+    height: 250px;
 }
 
 
@@ -35,6 +36,7 @@
     display: block;
     margin-left: 10%;
   /*  margin-right: auto;*/
+  width: 400px;
 }
 
 
