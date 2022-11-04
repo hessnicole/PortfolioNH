@@ -33,6 +33,7 @@ section {
     content: 'Heute';
     font-weight: bold;
     font-family: Helvetica, sans-serif;
+    font-size: larger;
 }
 
 .timeline:after {
@@ -43,6 +44,7 @@ section {
     color: var(--color-main);;
     font-weight: bold;
     font-family: Helvetica, sans-serif;
+    font-size: larger;
 }
 
 .timeline-entry {
@@ -56,16 +58,15 @@ section {
 .timeline-entry::after {
     content: '';
     position: absolute;
-    left: -2em;
+    left: -1.9em;
     top: 50%;
     width: 0px;
     height: 0px;
     -webkit-transform: rotate(45deg);
     border-style: solid;
-    border-width: 0 150px 259.8px 150px;
+    border-width: 0 2.5vw 4.3vw 2.5vw;
     background: var(--color-main);
     border-color: transparent transparent var(--color-main) transparent;
-
 
 
 

@@ -16,10 +16,8 @@
 <link rel="stylesheet" href="CV.css">
 <link rel="stylesheet" href="kontakt.css">
 <link rel="stylesheet" href="impressionen.css">
-
-
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 </head>
 
 <body>
@@ -27,20 +25,24 @@
  <!--Navigation Menu-->
 
  <nav id="main-nav">
-    <a href="#header"><span>Home</span></a>
+    <a href="#oben"><span>Home</span></a>
     <a href="#aboutme"><span>Über mich</span></a>
     <a href="#cv"><span>CV</span></a>
     <a href="#impressionen"><span>Impressionen</span></a>
     <a href="#Kontaktformular"><span>Kontakt</span></a>
   </nav>    
 
+
+
+
+  <!-- Mobile Navigation Menu -->
   <nav id="mobile-nav">
     <svg class= "burger-menu-icon" viewBox="0 0 100 80" width="40" height="40" style="fill: rgb(247, 222, 183);">
         <rect width="100" height="20"></rect>
         <rect y="30" width="100" height="20"></rect>
         <rect y="60" width="100" height="20"></rect>
       </svg>
-    <a href="#header" class="mobile-nav-option"><span>Home</span></a>
+    <a href="#oben" class="mobile-nav-option"><span>Home</span></a>
     <a href="#aboutme" class="mobile-nav-option"><span>Über mich</span></a>
     <a href="#cv" class="mobile-nav-option"><span>CV</span></a>
     <a href="#impressionen" class="mobile-nav-option"><span>Impressionen</span></a>
@@ -50,12 +52,16 @@
 
     
 <!-- Muster und Passfoto-->
-<div id="header">
-    <div id="oben"> <!-- Muster zuoberst-->
-        <div id="quadrat"> <!-- Portrait Bild-->
-            <img id="portrait" src="Bilder\foto-02-01.png" alt="Portrait" width="30%">
-        </div>
+
+<div id="oben"> <!-- Muster zuoberst--> </div>
+
+<div id="TITEL">
+
+<div id="Bild"> <!-- Portrait Bild-->
+    <img id="portrait" src="Bilder\foto-02-01.png" alt="Portrait">
 </div>
+
+
 
 <!-- Name-->
 <!-- source: https://codepen.io/alvarotrigo/pen/xxLvyOG -->
@@ -77,16 +83,15 @@
 </div>
 
 
-
-
-
 <!-- Über mich -->
+<!-- Quelle flip-card: W3Schools -->
 
 <!-- Fähigkeiten -->
 <section class="abschnitt" id="aboutme">
 <div > 
 <h1>Fähigkeiten</h1>
 </div>
+
 
 <div class="abschnitt2">
         <div class="flip-card">
@@ -179,20 +184,11 @@
 
 
 
-
-
-
-
-
-
-
-
 <!--CV - Quelle: Patrick Brunner*/-->
 
 <section id="cv">
     <h1>Curriculum Vitae</h1>
     <div class="timeline">
-        <!-- animate__animated animate__fadeInRightBig -->
         
         <div data-aos="fade-left" class="timeline-entry right">  
             <div class="tl-title">BSc Wirtschaftsinformatik</div>
@@ -273,8 +269,8 @@
 <div class="parallax"></div>
 
 
-<!-- impressionen -->
 
+<!-- impressionen -->
 
 <section id="impressionen" class="abschnitt">
     <h1>Impressionen</h1>
@@ -293,7 +289,6 @@
 
 </section>
 
-<div style="height: 20vh;"></div>
 
 <!-- Unterteiler -->
 <div class="parallax"></div>
@@ -369,10 +364,6 @@
 
 
 
-
-
-
-<!-- Quelle: https://dev.to/ebereplenty/contact-form-with-emailjs-plain-javascript-365l -->
 
 <!-- Email JS -->
 <script
