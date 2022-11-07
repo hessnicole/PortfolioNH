@@ -2,7 +2,7 @@
 
 section {
     width: 100vw;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     background-color: var(--color-background-left);
@@ -12,6 +12,7 @@ section {
     padding-top: 1em;
     position: relative;
     align-items: center;
+    margin-bottom: 10vh;
 }
 
 .timeline {

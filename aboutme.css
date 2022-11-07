@@ -1,6 +1,9 @@
 
+#aboutme {
+  margin-bottom: 10vh;
+}
 
-  .abschnitt2 {
+.abschnitt2 {
     display: flex;
     justify-content: space-around;
     height: 30vh;
