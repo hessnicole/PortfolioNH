@@ -1,12 +1,4 @@
 
-#menu {
-  height: 10vh;
-  display: flex;
-}
-
-#header {
-    height: 800px;
-}
 
 #oben {
         z-index: -10;

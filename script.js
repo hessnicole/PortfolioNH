@@ -1,3 +1,5 @@
+// div Mouse following
+
 let myDiv = document.getElementById("my-div");
 //Detect touch device
 function isTouchDevice() {
