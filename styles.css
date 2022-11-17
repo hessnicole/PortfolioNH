@@ -6,11 +6,14 @@ h1 {
   font-size: 4vh;
 }
 
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 body {
 background-color: black;
 font-family: 'Nunito Sans', sans-serif;
 color: rgb(247, 222, 183);
-overflow-x: hidden;
 margin: 0;
 }
 
