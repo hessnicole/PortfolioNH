@@ -44,6 +44,23 @@
 	-o-animation: one 5s ease-in-out infinite alternate;
 	animation: one 5s ease-in-out infinite alternate;
 }
+
+.footertext {
+	width: 100vw;
+	height: 20vh;
+	text-align: center;
+	padding-top: 5vh;
+	font-size: larger;
+  }
+  
+  
+	/*Footer */
+#frucht{
+	width: 4vh;
+	border-radius: none;
+  }
+
+
 @-webkit-keyframes 
 one { from {
 -webkit-box-shadow: 0 0 250px 20px #473C78;

@@ -43,6 +43,8 @@ margin: 0;
     box-shadow: 20px 20px 50px rgba(0, 0, 0);
   background-color: #000000;
     z-index: 10;
+    padding-top: 5px;
+    padding-left: 5px;
   }
   
   #main-nav a {
@@ -68,6 +70,7 @@ margin: 0;
     height: 64px;
     width: 64px;
     justify-content: center;
+    padding-left: 5px;
   }
 
   #mobile-nav a {
@@ -80,6 +83,8 @@ margin: 0;
     color: var(--color-main);
     font-size: 12px;
     transition: width 0.2s linear;
+    background-color: black;
+  
   }
 
   
@@ -106,6 +111,7 @@ margin: 0;
   }
 
 
+
   @media (min-width: 768px) {
     #mobile-nav{
       visibility: hidden;
@@ -113,5 +119,11 @@ margin: 0;
 
     #main-nav {
       display: flex;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #my-div{
+      visibility: hidden;
     }
   }
